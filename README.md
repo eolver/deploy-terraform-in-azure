@@ -1,5 +1,5 @@
 # deploy-terraform-in-azure
-Deploying Infrastructure to Azure
+Deploying Infrastructure to Azure using Terraform (Infrastructure as Code)
 
 
 ## Overview
@@ -29,8 +29,6 @@ Each contains the required code in order for the infrastructure to deploy.
 
 ##### providers.tf
 
-Azure requires that an application is added to Azure Active Directory to generate the client_id, client_secret, and tenant_id needed by Terraform (subscription_id can be recovered from your Azure account details). Please go here for full instructions on how to create this to populate your provider.tf file.
-
 this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret) Once you create the App Registration you need to go to relevant subscription, Access Control (IAM) and define the role assignment (Contributer) to the App registered.
 
 ```
@@ -42,10 +40,12 @@ tenant_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 ```
 subscription_id = subscription_id
+
 client_id = Application ID (Under App Registrations)
+
 client_secret = Key (Generated in Application Settings)
-tenant_id = Directory_ID (Azure AD Properties) 
-#### 
+
+tenant_id = Directory_ID (Azure AD Properties)  
 
 ##### main.tf
 
