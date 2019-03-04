@@ -93,4 +93,4 @@ commands will detect it and remind you to do so if necessary.
 
 #### Terraform Plan
 
-Once you have succussfully got terraform running. you can now begin to execute the planning stages of the infrastructure you have set out to deploy by running terraform plan cmd. This will walk the the steps as if you were deploying and display a list of all infrastructure that will deployed.
+Once you have succussfully got terraform running. you can now begin to execute the planning stages of the infrastructure you have set out to deploy by running terraform plan cmd. This will walk through the steps as if you were deploying and display a list of all infrastructure that will deployed.
