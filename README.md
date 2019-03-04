@@ -53,7 +53,7 @@ this is used to define the actual infrastructure to deploy.
 
 ##### variables.tf
 
-This contains the input variables an Administrator/Developer/Contributer can deifne when deploying the template.
+This contains the input variables an Administrator/Developer/Contributer can define when deploying the template.
 
 ### Run Terraform
 
