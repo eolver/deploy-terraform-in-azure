@@ -31,7 +31,7 @@ Each contains the required code in order for the infrastructure to deploy.
 
 Azure requires that an application is added to Azure Active Directory to generate the client_id, client_secret, and tenant_id needed by Terraform (subscription_id can be recovered from your Azure account details). Please go here for full instructions on how to create this to populate your provider.tf file.
 
-this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret)
+this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret) Once you create the App Registration you need to go to relevant subscription, Access Control (IAM) and define the role assignment (Contributer) to the App registered.
 
 ```
 provider "azurerm" {
@@ -54,3 +54,18 @@ this is used to define the actual infrastructure to deploy.
 ##### variables.tf
 
 This contains the input variables an Administrator/Developer/Contributer can deifne when deploying the template.
+
+### Run Terraform
+
+Using powershell as administrator console, In my case VS Code. Browse to the required path where terraform has been installed. In this demo it has been installed C:\Program Files\Terraform\terraform.exe
+
+```
+cd\
+cd '.\Program Files\terraform\'
+terraform.exe init
+```
+
+This should validate terraform is running.
+
+
+
