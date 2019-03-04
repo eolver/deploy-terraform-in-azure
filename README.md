@@ -8,7 +8,7 @@ Deploying Infrastructure to Azure
 ![azure](https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180821105618/Microsoft_Azure_Logo.png)
 
 
-The object I set out to do was to use terraform to easily deploy infrastructure into Azure using Azure CLI
+The object I set out to do was to use terraform to easily deploy infrastructure into Azure using Azure CLI. In this case I will be deploying a loan balancer with 2 virtual machines. This is more to demonstrate how you can deploy infrastrucutre only using terraform in azure.
 
 ***
 
@@ -27,7 +27,11 @@ Each contains the required code in order for the infrastructure to deploy.
 
 #### Define and authenticate Azure details
 
-First off the providers.tf, this is used to define the subscription, client_id, client_secret, and tenant_id
+##### providers.tf
+
+Azure requires that an application is added to Azure Active Directory to generate the client_id, client_secret, and tenant_id needed by Terraform (subscription_id can be recovered from your Azure account details). Please go here for full instructions on how to create this to populate your provider.tf file.
+
+this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret)
 
 ```
 provider "azurerm" {
@@ -38,7 +42,15 @@ tenant_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 ```
 subscription_id = subscription_id
-client_id = 
-client_secret = 
-tenant_id = 
+client_id = Application ID (Under App Registrations)
+client_secret = Key (Generated in Application Settings)
+tenant_id = Directory_ID (Azure AD Properties) 
 #### 
+
+##### main.tf
+
+this is used to define the actual infrastructure to deploy.
+
+##### variables.tf
+
+This contains the input variables an Administrator/Developer/Contributer can deifne when deploying the template.
