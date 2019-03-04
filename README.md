@@ -94,3 +94,11 @@ commands will detect it and remind you to do so if necessary.
 #### Terraform Plan
 
 Once you have succussfully got terraform running. you can now begin to execute the planning stages of the infrastructure you have set out to deploy by running terraform plan cmd. This will walk through the steps as if you were deploying and display a list of all infrastructure that will deployed.
+
+#### Terraform Apply
+
+Once you have reviewed the output of the planned infrastructure to deploy you can commit by running apply command which will then go and build/create the infrastructure. From the Azure Portal you should begin to see the resources creating.
+
+#### Terraform destroy
+
+If you are only creating for test purposes you can run the destroy command to delete all terraform deployed infrastructure you have created.
