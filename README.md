@@ -101,4 +101,4 @@ Once you have reviewed the output of the planned infrastructure to deploy you ca
 
 #### Terraform destroy
 
-If you are only creating for test purposes you can run the destroy command to delete all terraform deployed infrastructure you have created.
+If you are only creating for test purposes you can run the destroy command to delete all terraform infrastructure you have created.
