@@ -29,7 +29,7 @@ Each contains the required code in order for the infrastructure to deploy.
 
 ##### providers.tf
 
-this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret) Once you create the App Registration you need to go to relevant subscription, Access Control (IAM) and define the role assignment (Contributer) to the App registered.
+this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret) Once you create the App Registration in the [Azure Portal](https://portal.azure.com) you need to go to relevant subscription, Access Control (IAM) and define the role assignment (Contributer) to the App registered.
 
 ```
 provider "azurerm" {
@@ -47,7 +47,7 @@ client_secret = Key (Generated in Application Settings)
 
 tenant_id = Directory_ID (Azure AD Properties)  
 
-##### main.tf
+##### [main.tf](http://github.com/elliottolver)
 
 this is used to define the actual infrastructure to deploy.
 
