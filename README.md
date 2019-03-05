@@ -27,7 +27,7 @@ Each contains the required code in order for the infrastructure to deploy.
 
 #### Define and authenticate Azure details
 
-##### providers.tf
+#### [providers.tf](https://github.com/eolver/deploy-terraform-in-azure/blob/master/providers.tf)
 
 this is used to define the subscription, client_id, client_secret, and tenant_id needed by Terraform. Azure requires that you create an application (in Azure Active Directory service) to generate teh client_id and client_secret) Once you create the App Registration in the [Azure Portal](https://portal.azure.com) you need to go to relevant subscription, Access Control (IAM) and define the role assignment (Contributer) to the App registered.
 
@@ -47,11 +47,11 @@ client_secret = Key (Generated in Application Settings)
 
 tenant_id = Directory_ID (Azure AD Properties)  
 
-##### [main.tf](http://github.com/elliottolver)
+#### [main.tf](https://github.com/eolver/deploy-terraform-in-azure/blob/master/main.tf)
 
 this is used to define the actual infrastructure to deploy.
 
-##### variables.tf
+#### [variables.tf](https://github.com/eolver/deploy-terraform-in-azure/blob/master/variables.tf)
 
 This contains the input variables an Administrator/Developer/Contributer can define when deploying the template.
 
