@@ -8,7 +8,7 @@ Deploying Infrastructure to Azure using Terraform (Infrastructure as Code)
 ![azure](https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180821105618/Microsoft_Azure_Logo.png)
 
 
-The object I set out to do was to use terraform to easily deploy infrastructure into Azure using Azure CLI. In this case I will be deploying a load balancer with 2 virtual machines. This is more to demonstrate how you can deploy infrastrucutre using Terraform in Azure rather than the actual application itself.
+The object I set out to do was to use terraform to easily deploy infrastructure into Azure using Azure CLI or Powershell cmdlet window. In this scenario I will be deploying a load balancer with 2 virtual machines. This is more to demonstrate how you can deploy infrastrucutre using Terraform in Azure rather than the actual application itself.
 
 ***
 
