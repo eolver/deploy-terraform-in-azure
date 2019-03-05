@@ -18,6 +18,12 @@ Windows Version 1903 (OS Build 18342.8)
 
 Download terraform from [Terraform website](https://www.terraform.io/downloads.html) for the required platform. In my case Windows. Create directory C:\Windows\Program Files\terraform copy the terraform.exe into the folder
 
+to allow terraform to be recognised from any directory in the cmd window add terraform directy as a system variable. This will allow you to run terraform without having to change the directory path of the shell everytime. to do this follow the steps below.
+
+System > Advanced system settings > Enviroment variables
+
+Create a new system variable pointing to the directy path to the terraform folder eg C:\Program Files\terraform. name the variable terraform.
+
 
 ### Create Terraform Files
 
