@@ -16,7 +16,7 @@ The object I set out to do was to use terraform to easily deploy infrastructure 
 
 Windows Version 1903 (OS Build 18342.8)
 
-Download terraform from Terraform website for the required platform. In my case Windows. Create directory C:\Windows\Program Files\terraform copy the terraform.exe into the folder
+Download terraform from [Terraform website](https://www.terraform.io/downloads.html) for the required platform. In my case Windows. Create directory C:\Windows\Program Files\terraform copy the terraform.exe into the folder
 
 
 ### Create Terraform Files
